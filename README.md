@@ -1,2 +1,5 @@
 # UE-VUtils
-A frontend for UE-V operations
+A GUI for UE-V settings, filling some gaps microsoft left in their product.
+
+Written in Powershell using WPF forms.
+
