@@ -1,5 +1,7 @@
 # UE-VUtils
-A GUI for UE-V settings, filling some gaps microsoft left in their product.
+A GUI for UE-V settings packages (PKGX format).
+
+Allows you to restore specific settings packages directly.  I found the command line utilities a bit convoluted.
 
 Written in Powershell using WPF forms.
 
