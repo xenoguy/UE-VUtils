@@ -1,0 +1,43 @@
+﻿<Window
+
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  Title="UE-V Utility" Height="468.34" Width="1664.651">
+
+    <Grid>
+
+        <Button x:Name="clearbtn" Content="Clear Cache" HorizontalAlignment="Left" Margin="521,36,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="packagelist" HorizontalAlignment="Left" Margin="122,63,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="restorebtn" Content="Restore" HorizontalAlignment="Left" Margin="1547,403,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.75,0.363"/>
+        <DataGrid x:Name="registrylist" HorizontalAlignment="Left" Height="271" Margin="32,127,0,0" VerticalAlignment="Top" Width="783" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Type" Width="Auto" Binding="{Binding Path=type}"/>
+                <DataGridTextColumn Header="Path" Width="Auto" Binding="{Binding Path=path}"/>
+                <DataGridTextColumn Header="Value" Width="Auto" Binding="{Binding Path=value}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="uevstatus" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Local Package Cache:&#xA;" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Height="24"/>
+        <Label Content="Settings Packages:&#xA;" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="localpkgcache" HorizontalAlignment="Left" Height="23" Margin="137,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" IsEnabled="False"/>
+        <Button x:Name="loadsettings" Content="Load" HorizontalAlignment="Left" Margin="247,63,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.75,0.363"/>
+        <DataGrid x:Name="filelist" HorizontalAlignment="Left" Height="271" Margin="820,127,0,0" VerticalAlignment="Top" Width="802" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Path" Width="Auto" Binding="{Binding path}"/>
+                <DataGridTextColumn Header="Pkgdatname" Width="Auto" Binding="{Binding pkgdatname}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Registry" HorizontalAlignment="Left" Margin="32,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Files" HorizontalAlignment="Left" Margin="820,96,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="importsettings" Content="Import" HorizontalAlignment="Left" Margin="841,63,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.75,0.363"/>
+        <TextBox x:Name="pkgxfilename" HorizontalAlignment="Left" Height="23" Margin="327,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="509" IsEnabled="False"/>
+        <Button x:Name="enabledisable" Content="Disable UE-V" HorizontalAlignment="Left" Margin="105,9,0,0" VerticalAlignment="Top" Width="75" ToolTipService.ShowOnDisabled = "True"/>
+        <Button x:Name="reloadtemplates" Content="Reload templates" HorizontalAlignment="Left" Margin="185,9,0,0" VerticalAlignment="Top" Width="101" ToolTipService.ShowOnDisabled = "True"/>
+        <TextBox x:Name="networkpackagepath" HorizontalAlignment="Left" Height="23" Margin="724,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" IsEnabled="False"/>
+        <Label Content="Network Storage:" HorizontalAlignment="Left" Margin="622,31,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+
+</Window>
