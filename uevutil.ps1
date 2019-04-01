@@ -1,6 +1,8 @@
 ﻿Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName PresentationFramework
 
+cd $PSScriptRoot
+
 $wshell = New-Object -ComObject Wscript.Shell
 
 function Unzip
